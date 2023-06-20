@@ -14,8 +14,10 @@ const Login = () => {
                 <div className="text d-flex flex-column justify-content-center align-items-center">
                     <div className="top text-center">
                       <h1>YellowGo</h1>
-                      <h3>Your Rental, Your Journey</h3>
-                      <p>Welcome, please log in to your account.</p>
+                      <div className="topText2 d-flex flex-column">
+                        <h3>Your Rental, Your Journey</h3>
+                        <p>Welcome, please log in to your account.</p>
+                      </div>
                     </div>
                     <div className="bottom d-flex flex-column justify-content-center align-items-center">
                      <div className="inputs d-flex flex-column">
@@ -24,11 +26,6 @@ const Login = () => {
                       <p className='text-end'>Forgot password?</p>
                      </div>
                       <Button>Log in</Button>
-                      <p>or log in with</p>
-                      <div className="box d-flex justify-content-center align-items-center">
-                      <Button>Google</Button>
-                      <Button>Facebook</Button>
-                      </div>
                       <p>Dont have an account? <LinkContainer to='/'><NavLink>Sign Up</NavLink></LinkContainer></p>
                     </div>
                 </div>
