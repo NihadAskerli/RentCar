@@ -9,6 +9,37 @@
     }
     .text{
         height: 100vh;
+        h1{
+            color: yellow;
+            margin-bottom: 28px;
+        }
+        .topText2{
+            gap:0;
+            margin-bottom: 27px;
+        }
+        .inputs{
+            gap: 10px;
+            margin-bottom: 35px;
+            input{
+                width: 435px;
+                height: 64px;
+                padding: 20px 24px 20px 24px;
+                border: 1px solid #828282;
+                border-radius: 8px;
+            }
+        }
+        button{
+            width: 435px;
+            height: 64px;
+            padding: 20px 80px;
+            background-color: #FFDC5C;
+            border: 1px #FFDC5C solid;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        button:hover{
+            background-color: #ecce61;
+        }
     }
 }
 
@@ -20,8 +51,44 @@
         height: 100vh;
         background-image: url("https://s3-alpha-sig.figma.com/img/7e7f/0b14/a7f2183656d16c709a3ae2188b625bf0?Expires=1688342400&Signature=LqSUTpulkxl8J62FFZsssPDwV7zeDvAwHkR-CajqbkHhTXinLW3nvvFI24EyvjVpB5Qz~mm~EI5NtQdYWhabbi~Gf6y6-IyuDoKHvty2JZJo3LG8-GSteLP6-6dckhicPAsdxmx8NjN2dL6VOFnUHICivtyOZrPXZOGJQeHtt7WaA27aQh33WurJIRCgVAYK5O-gehgV1D6xuTPVt0fxE0ufO1-ZRnpYldqCoDG3rbGP2iG0Bg7~H3l~dTUX6RPj-ACXhC-sLKHy~EFv9qqBG-Kd1exzQ88tr6CudcFdqABarIFNVhi6Z0ADjlkzAQr057b0RhG0-a8~wGMSMboW5Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");        
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .text{
         height: 100vh;
+        margin-top: 0;
+        h1{
+            color: yellow;
+            margin-bottom: 37px;
+        }
+        .topText2{
+            gap: 0;
+            margin-bottom: 48px;  
+        }
+        .inputs{
+            gap: 10px;
+            input{
+                width:435px;
+                height: 64px;
+                border: 1px solid #828282;
+                border-radius: 8px;
+                padding: 20px 24px 20px 24px;
+            }
+           
+        }
+        button{
+            width: 435px;
+            height: 64px;
+            background: #FFDC5C;
+            padding:  20px 80px 20px 80px;
+            border-radius: 8px;
+            border: 1px #FFDC5C solid;
+            margin-bottom: 10px;
+        }
+        button:hover{
+            background-color: #ecce61;
+        }
+      
     }
+   
 }

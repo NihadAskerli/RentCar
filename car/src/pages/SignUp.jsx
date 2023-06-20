@@ -14,8 +14,10 @@ const SignUp = () => {
                 <div className="text d-flex flex-column justify-content-center align-items-center">
                     <div className="top text-center">
                       <h1>YellowGo</h1>
-                      <h3>Start Your Journey Here</h3>
-                      <p>Experience the Freedom of Renting</p>
+                      <div className="topText2">
+                         <h3>Start Your Journey Here</h3>
+                         <p>Experience the Freedom of Renting</p>
+                      </div>
                     </div>
                     <div className="bottom d-flex flex-column justify-content-center align-items-center">
                      <div className="inputs d-flex flex-column">
@@ -24,11 +26,6 @@ const SignUp = () => {
                       <input type="password" placeholder='Re-type Password'/>
                      </div>
                       <Button>Sign Up</Button>
-                      <p>or sign up with</p>
-                      <div className="box d-flex justify-content-center align-items-center">
-                      <Button>Google</Button>
-                      <Button>Facebook</Button>
-                      </div>
                       <p>Already have an account? <LinkContainer to='/login'><NavLink>Log in</NavLink></LinkContainer></p>
                     </div>
                 </div>
