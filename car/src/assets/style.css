@@ -30,6 +30,11 @@
   border: 1px solid #828282;
   border-radius: 8px;
 }
+
+.signUp .text .inputs p {
+  color: red;
+}
+
 .signUp .text button {
   width: 435px;
   height: 64px;
@@ -77,6 +82,11 @@
   border-radius: 8px;
   padding: 20px 24px 20px 24px;
 }
+
+.login .text .inputs .txt {
+  color: red;
+}
+
 .login .text button {
   width: 435px;
   height: 64px;
