@@ -47,8 +47,12 @@ const {register, handleSubmit, formState: {errors}} = useForm({
                       {errors.password && <p className='txt'>{errors.password?.message}</p>}
                       <p className='text-end'>Forgot password?</p>
                      </div>
+
                       <Button type='submit'>Log in</Button>
                      </Form>
+
+               
+
                       <p>Dont have an account? <LinkContainer to='/'><NavLink>Sign Up</NavLink></LinkContainer></p>
                     </div>
                 </div>

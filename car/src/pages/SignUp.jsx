@@ -49,6 +49,7 @@ const {register, handleSubmit, formState: {errors}} = useForm({
                      </div>
                       <Button type='submit'>Sign Up</Button>
                     </Form>
+
                       <p>Already have an account? <LinkContainer to='/login'><NavLink>Log in</NavLink></LinkContainer></p>
                     </div>
                 </div>
