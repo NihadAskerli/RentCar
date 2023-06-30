@@ -6,8 +6,6 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import {yupResolver} from '@hookform/resolvers/yup'
 
-
-
 const Login = () => {
 
   const schema = yup.object().shape({
@@ -47,13 +45,16 @@ const {register, handleSubmit, formState: {errors}} = useForm({
                       {errors.password && <p className='txt'>{errors.password?.message}</p>}
                       <p className='text-end'>Forgot password?</p>
                      </div>
+
                       <Button type='submit'>Log in</Button>
                      </Form>
+
                       <p>Dont have an account?</p>
                       <div className="buttons d-flex justify-content-between">
                          <LinkContainer to="/admin"><Button>Company</Button></LinkContainer>
                          <LinkContainer to="/signup"><Button>User</Button></LinkContainer>
                      </div>
+                      <p>Dont have an account? <LinkContainer to='/'><NavLink>Sign Up</NavLink></LinkContainer></p>
                     </div>
                 </div>
             </Col>
