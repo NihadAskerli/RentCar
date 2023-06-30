@@ -9,6 +9,8 @@ import {yupResolver} from '@hookform/resolvers/yup'
 const SignUp = () => {
   
   const schema = yup.object().shape({
+    firstname: yup.string().required(),
+    lastname: yup.string().required(),
     email: yup.string().email().required(),
     password: yup.string().min(8).max(20).required(),
     confirmPassword: yup.string().oneOf([yup.ref("password"),null], "Passwords Don't Match").required()
@@ -40,6 +42,10 @@ const {register, handleSubmit, formState: {errors}} = useForm({
                     <div className="bottom d-flex flex-column justify-content-center align-items-center">
                     <Form onSubmit={handleSubmit(onSubmit)}>
                     <div className="inputs d-flex flex-column">
+                      <input type="text" placeholder='First Name' {...register('firstname')}/>
+                      {errors.firstname && <p>{errors.firstname?.message}</p>}
+                      <input type="text" placeholder='Last Name' {...register('lastname')}/>
+                      {errors.lastname && <p>{errors.lastname?.message}</p>}
                      <input type="email" placeholder='Email address' {...register('email')}/>
                      {errors.email && <p>{errors.email?.message}</p>}
                       <input type="password" placeholder='Password' {...register('password')}/>
@@ -49,8 +55,7 @@ const {register, handleSubmit, formState: {errors}} = useForm({
                      </div>
                       <Button type='submit'>Sign Up</Button>
                     </Form>
-
-                      <p>Already have an account? <LinkContainer to='/login'><NavLink>Log in</NavLink></LinkContainer></p>
+                      <p>Already have an account? <LinkContainer to='/'><NavLink>Log in</NavLink></LinkContainer></p>
                     </div>
                 </div>
             </Col>
